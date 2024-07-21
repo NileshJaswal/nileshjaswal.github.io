@@ -37,6 +37,14 @@
   }
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body{
   background-color: #101C2E;
+}
+
+.container{
+  max-width: 1240px !important;
 }
