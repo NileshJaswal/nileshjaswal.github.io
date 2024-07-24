@@ -5,9 +5,9 @@ import dev from "../img/dev.svg";
 
 export default function Specialized() {
   return (
-    <section className="specialized">
+    <section className="specialized bg-sectionbg py-20">
       <div className="container mx-auto text-white">
-        <h3 className="text-3xl mb-12">
+        <h3 className="text-4xl mb-12">
           I’m <span className="text-secondary">Specialized</span> in
         </h3>
         <div className="grid grid-cols-4 md:grid-cols-12 gap-12">

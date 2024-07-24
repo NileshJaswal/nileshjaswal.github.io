@@ -42,18 +42,20 @@
 @tailwind utilities;
 
 body{
-  background-color: #101C2E;
+  background-color: #030712;
 }
 
-@media (max-width:767px) {
+@media (max-width:1360px) {
   .container{
     max-width: 100% !important;
     padding: 0 16px;
   }
 }
 
+
+
 .container{
-  max-width: 1280px !important;
+  max-width: 1360px !important;
 }
 
 .btn.bg-secondary:hover{
@@ -62,8 +64,8 @@ body{
 
 .specialized .card {
   padding: 24px;
+  background-color: #1F2937;
   border-radius: 20px;
-  border: solid 1px rgba(217, 217, 217, 0.21);
   transition: ease-in .2s;
   transition-property: background-color, box-shadow, transform, border-color;
   align-items: start;
@@ -73,7 +75,6 @@ body{
   background-color: #d74e4e;
   transform: scale(1.03);
   cursor: pointer;
-  border-color: #d74e4e;
   box-shadow: 16px 16px 21px 0 rgba(255, 89, 90, 0.3);
 }
 
@@ -97,4 +98,21 @@ body{
 
 .specialized .card:hover .img-wrap{
   background-color: #101C2E;
+}
+
+.tab:is(input:checked){
+  background-color: white !important;
+}
+
+.experience .exp-card{
+  max-width: 896px;
+}
+
+.experience .exp-card ul{
+  list-style: initial;
+  padding-left: 16px;
+  margin-top: 16px;
+}
+.experience .exp-card ul li{
+  margin-bottom: 4px;
 }

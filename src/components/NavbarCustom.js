@@ -7,14 +7,14 @@ export default function NavbarCustom() {
       <div className="container mx-auto flex items-center justify-between">
         <img src={logo} alt="Logo" />
 
-        <ul className="menu menu-vertical lg:menu-horizontal bg-primary rounded-box">
+        {/* <ul className="menu menu-vertical lg:menu-horizontal bg-mainbg rounded-box">
           <li>
             <a className="text-base" href="/">Experience</a>
           </li>
           <li>
             <a className="text-base" href="/">Portfolio</a>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </nav>
   );

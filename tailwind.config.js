@@ -7,8 +7,11 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        'primary': '#101c2e',
-        'secondary': '#ff595a'
+        'mainbg': '#030712',
+        'sectionbg': '#111827',
+        'cardbg': '#1F2937',
+        'secondary': '#ff595a',
+        'port-gray': '#374151'
       }
     },
   },

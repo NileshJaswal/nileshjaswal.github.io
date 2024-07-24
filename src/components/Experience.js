@@ -1,57 +1,123 @@
 import React from "react";
+import baseline from "../img/baseline.png";
+import slinfy from "../img/slinfy.png"
 
 export default function Experience() {
   return (
-    <section>
-      <div className="container mx-auto mt-20">
-        <h3 className="text-3xl mb-12 text-center">My <span className="text-secondary">Journey</span></h3>
-        <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-          <li>
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="#d74e4e"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
+    <section className="experience bg-sectionbg pt-10 pb-20">
+      <div className="container mx-auto">
+        <h3 className="text-4xl mb-6 text-center">
+          My <span className="text-secondary">Experience</span>
+        </h3>
+        <p className="text-xl	mb-12 text-center">
+          Here is a quick summary of my most recent experiences
+        </p>
+        <div className="flex flex-col gap-12">
+          <div className="grid md:grid-cols-12 exp-card mx-auto rounded-xl p-8 bg-cardbg">
+            <div className="col-span-3">
+              <img src={baseline} alt="baseline" />
             </div>
-            <div className="timeline-start mb-10 md:text-end">
-              <time className="font-mono italic">Apr 2021 - June 2024</time>
-              <div className="text-2xl font-semibold">Baseline IT Development</div>
-              I started as a web designer at Baseline IT Developments, quickly working on live projects. I developed websites using HTML, CSS, WordPress, and Squarespace, enhancing my skills in Git, SCSS, and jQuery. I focused on product page design and functionality in an agile BigCommerce e-commerce project, improving user experience. Promoted to Senior Web & UI Designer and Team Lead, I led the design and development for Klevu search, PLP, order details, and tracking using Storefront & GraphQL API. I directed team efforts, created design systems, and developed custom widgets, working on various Figma UI/UX, Webflow, and JavaScript projects.
+            <div className="col-span-6">
+              <h3 className="text-secondary font-semibold text-xl">
+                Web & UI Designer - TL
+              </h3>
+              <ul className="text-base">
+                <li>
+                  Promoted to Senior Web & UI Designer and Team Lead, continuing
+                  work on agile project.
+                </li>
+                <li>
+                  Led the design and development for Klevu search, PLP, order
+                  details, and tracking using Storefront & GraphQL API.
+                </li>
+                <li>
+                  Directed team efforts on other page designs, ensuring cohesive
+                  and functional results.
+                </li>
+                <li>
+                  Created design systems and components for new agile based
+                  project, developing custom widgets to meet client needs.
+                </li>
+                <li>
+                  Worked on various Figma UI/UX projects, Webflow, and other
+                  front-end JavaScript projects.
+                </li>
+              </ul>
             </div>
-            <hr className="bg-white" />
-          </li>
-          <li>
-            <hr className="bg-white" />
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="#d74e4e"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
+            <div className="col-span-3 flex justify-end">
+              <time>JUL 2022 - JUN 2024</time>
             </div>
-            <div className="timeline-end mb-10">
-              <time className="font-mono italic">Apr 2020 - Oct 2020</time>
-              <div className="text-2xl font-semibold">Solitaire Infosystems</div>
-              I dedicated significant time and effort to mastering HTML and CSS, acquiring the skill to convert complex design files (PSD & Figma) into functional and pixel-perfect HTML/CSS templates. To solidify my skills, I embarked on several projects to create simple websites from scratch, refining my problem-solving abilities through these practical exercises.
+          </div>
+
+          <div className="grid md:grid-cols-12 exp-card mx-auto rounded-xl p-8 bg-cardbg">
+            <div className="col-span-3">
+              <img src={baseline} alt="baseline" />
             </div>
-            <hr className="bg-white"/>
-          </li>
-        </ul>
+            <div className="col-span-6">
+              <h3 className="text-secondary font-semibold text-xl">
+                Web Designer
+              </h3>
+              <ul>
+                <li>
+                  Started as a web designer at Baseline IT Developments, working
+                  on live projects within a month.
+                </li>
+                <li>
+                  Developed websites using HTML, CSS, WordPress, and
+                  Squarespace, including client interactions.
+                </li>
+                <li>
+                  Enhanced skills in Git, SCSS and basic jQuery for front-end
+                  tasks.
+                </li>
+                <li>
+                  Worked on an agile BigCommerce e-commerce project, focusing on
+                  product page design and functionality.
+                </li>
+                <li>
+                  Designed product pages from scratch, improving user
+                  experience.
+                </li>
+                <li>
+                  Adapted new skills in Figma UI design and JavaScript during
+                  the BigCommerce project.
+                </li>
+              </ul>
+            </div>
+            <div className="col-span-3 flex justify-end">
+              <time>APR 2021 - JUL 2022</time>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-12 exp-card mx-auto rounded-xl p-8 bg-cardbg">
+            <div className="col-span-3">
+              <img src={slinfy} alt="slinfy" />
+            </div>
+            <div className="col-span-6">
+              <h3 className="text-secondary font-semibold text-xl">
+                Web Designer - Trainee
+              </h3>
+              <ul>
+                <li>
+                  I dedicated significant time and effort to master the
+                  fundamentals of HTML and CSS.
+                </li>
+                <li>
+                  I acquired the skill of converting complex design files (PSD &
+                  FIGMA) into functional and pixel-perfect HTML/CSS templates.
+                </li>
+                <li>
+                  To solidify my skills, I embarked on several projects to
+                  create simple websites from scratch. These practical exercises
+                  enabled me to refining my problem-solving abilities.
+                </li>
+              </ul>
+            </div>
+            <div className="col-span-3 flex justify-end">
+              <time>FEB 2020 - AUG 2020</time>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
