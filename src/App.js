@@ -1,23 +1,29 @@
+import React from "react";
 import "./App.css";
-import NavbarCustom from "./components/NavbarCustom";
 import Hero from "./components/Hero";
-import Specialized from "./components/Specialized";
+import TechStack from "./components/TechStack";
 import Experience from "./components/Experience";
-import Portfolio from "./components/Portfolio";
+import RecentWork from "./components/RecentWork";
+import Contact from "./components/Contact";
+import CustomCursor from "./components/CustomCursor";
 
 function App() {
   return (
-    <>
-      <header>
-        <NavbarCustom></NavbarCustom>
-      </header>
+    <div className="bg-mainbg min-h-screen text-white font-sans overflow-x-hidden selection:bg-accent selection:text-white cursor-none">
+      <CustomCursor />
+      {/* Navbar Minimalist */}
+      <nav className="fixed top-0 w-full p-6 z-50 mix-blend-difference flex justify-between items-center pointer-events-none">
+        <div className="font-bold text-xl tracking-tighter">NJ.</div>
+      </nav>
+
       <main>
-        <Hero name="Nilesh Jaswal"></Hero>
-        <Specialized></Specialized>
-        <Experience></Experience>
-        <Portfolio></Portfolio>
+        <Hero />
+        <TechStack />
+        <Experience />
+        <RecentWork />
+        <Contact />
       </main>
-    </>
+    </div>
   );
 }
 
